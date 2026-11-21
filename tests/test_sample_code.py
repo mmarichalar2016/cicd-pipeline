@@ -1,6 +1,9 @@
 import pytest
-from sample_code import add, subtract, multiply, divide
+from sample_code import add, subtract, multiply, divide, power
 
+def test_power():
+    assert power(2, 3) == 8
+    
 def test_add():
     assert add(2, 3) == 5
     assert add(-1, 1) == 0
