@@ -1,5 +1,5 @@
 import pytest
-from sample_code import add, subtract, multiply, divide, power
+from sample_code import add, subtract, multiply, divide, power, modulo
 
 def test_power():
     assert power(2, 3) == 8
@@ -8,6 +8,9 @@ def test_add():
     assert add(2, 3) == 5
     assert add(-1, 1) == 0
     assert add(1.5, 1.5) == 3.0
+
+def test_modulo():
+    assert modulo(10, 3) == 1
 
 def test_subtract():
     assert subtract(10, 5) == 5
